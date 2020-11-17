@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Know_Your_Government</string>
+    <string name="add">Add</string>
+    <string name="about">About</string>
+    <string name="todo">TODO</string>
+    <string name="mainPhoto">TODO</string>
+    <string name="logo">logo</string>
+    <string name="know_your_government">Know Your Government</string>
+    <string name="powered_by">Powered by</string>
+    <string name="_2020_mohammad_momeni">© 2020, Mohammad Momeni</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="phone">Phone:</string>
+    <string name="website">Website:</string>
+    <string name="address">Address:</string>
+    <string name="todo1">TODO1</string>
+    <string name="todo2">TODO2</string>
+    <string name="todo3">TODO3</string>
+    <string name="google_civic_n_and_information_api">Google Civic\n And Information API</string>
+</resources>

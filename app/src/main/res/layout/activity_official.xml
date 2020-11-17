@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_official"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfficialActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/location2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/OfficeName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location2" />
+
+        <TextView
+            android:id="@+id/Name2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/OfficeName2" />
+
+        <TextView
+            android:id="@+id/Party2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name2" />
+
+        <ImageView
+            android:id="@+id/mainPhoto"
+            android:layout_width="350dp"
+            android:layout_height="331dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/mainPhoto"
+            android:onClick="photoDetailActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Party2"
+            app:srcCompat="@drawable/missing" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="63dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="292dp"
+            android:contentDescription="@string/logo"
+            android:onClick="logoClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Party2"
+            app:srcCompat="@drawable/dem_logo" />
+
+        <TextView
+            android:id="@+id/AddressDetail"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="24dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainPhoto" />
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/phone"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/PhoneDetail"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/PhoneDetail"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AddressDetail" />
+
+        <TextView
+            android:id="@+id/Url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/website"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/UrlDetail"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/address"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/AddressDetail"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/UrlDetail"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PhoneDetail" />
+
+        <ImageButton
+            android:id="@+id/FacebookBotton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black"
+            android:contentDescription="@string/todo1"
+            android:onClick="facebookClicked"
+            android:scaleType="centerCrop"
+            android:scaleX="1.6"
+            android:scaleY="1.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmailDetail1"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageButton
+            android:id="@+id/TwitterBotton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black"
+            android:contentDescription="@string/todo2"
+            android:onClick="twitterClicked"
+            android:scaleType="centerCrop"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:layout_constraintStart_toEndOf="@+id/FacebookBotton"
+            app:layout_constraintTop_toBottomOf="@+id/EmailDetail1"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageButton
+            android:id="@+id/YoutubeBotton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black"
+            android:contentDescription="@string/todo3"
+            android:onClick="youTubeClicked"
+            android:scaleType="centerCrop"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:layout_constraintStart_toEndOf="@+id/TwitterBotton"
+            app:layout_constraintTop_toBottomOf="@+id/EmailDetail1"
+            app:srcCompat="@drawable/youtube" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Email:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/EmailDetail1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/EmailDetail1"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UrlDetail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
